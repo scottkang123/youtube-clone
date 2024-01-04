@@ -11,12 +11,20 @@ import { NgxFileDropModule } from 'ngx-file-drop';
 
 import { CommonModule } from '@angular/common';
 
+import {MatButtonModule} from '@angular/material/button';
+
 import { RouterModule } from '@angular/router';
+
+import { HeaderComponent } from './header/header.component';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UploadVideoComponent
+    UploadVideoComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +33,10 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     HttpClientModule,
     NgxFileDropModule,
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
